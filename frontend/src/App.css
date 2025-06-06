@@ -1,0 +1,187 @@
+/* Reset */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* App container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Landing Page */
+.landing-page {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.upload-form {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.upload-form h1 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: #333;
+}
+
+.upload-form p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.upload-form input[type="file"] {
+  margin-bottom: 20px;
+}
+
+.upload-form button {
+  padding: 10px 25px;
+  background-color: #2575fc;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-form button:hover {
+  background-color: #1954c5;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  height: 100%;
+}
+
+/* PDF Viewer */
+.pdf-viewer {
+  flex: 2;
+  padding: 10px;
+  background: #eaeaea;
+  border-right: 1px solid #ccc;
+}
+
+.pdf-viewer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Chatbot Panel */
+.chatbot {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: #fdfdfd;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.05);
+  margin-bottom: 10px;
+}
+
+
+.chat-message {
+  max-width: 80%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 18px;
+  word-wrap: break-word;
+  display: inline-block;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.chat-message.user {
+  background-color: #d0e7ff;
+  align-self: flex-end;
+  text-align: right;
+  margin-left: auto;
+  color: #084a9a;
+}
+
+.chat-message.bot {
+  background-color: #f0f0f0;
+  align-self: flex-start;
+  text-align: left;
+  margin-right: auto;
+  color: #333;
+}
+
+
+.empty-msg {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+.loading-msg {
+  text-align: left;
+  font-style: italic;
+  color: #888;
+}
+
+/* Chat Input */
+.chat-input-form {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-submit {
+  padding: 10px 20px;
+  background-color: #0b63ce;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-submit:hover:not(:disabled) {
+  background-color: #084a9a;
+}
+
+.chat-submit:disabled {
+  background-color: #a1c5f5;
+  cursor: not-allowed;
+}
