@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./App.css";
 
-const BACKEND_URL = "https://pdf-chatbot-backend-4o8b.onrender.com";
+const BACKEND_URL = "http://localhost:5000";
 
 function App() {
   const [pdfFileName, setPdfFileName] = useState(null);
